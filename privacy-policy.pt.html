@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidade — Nutryum</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f7f8f6; --fg:#171c1a; --muted:#56615c; --line:#dce3df; --accent:#2c7a6b; --card:#fff; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0e1311; --fg:#e8eeeb; --muted:#aeb8b3; --line:#253029; --accent:#4fbfa8; --card:#141a18; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { width: min(860px, calc(100% - 36px)); margin: 0 auto; padding: 48px 0 72px; }
+    header { border-bottom: 1px solid var(--line); margin-bottom: 34px; padding-bottom: 24px; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.08; margin: 0 0 12px; }
+    h2 { font-size: 1.25rem; margin: 34px 0 10px; }
+    p, li { color: var(--muted); }
+    p { margin: 0 0 12px; }
+    ul { margin: 0 0 14px 1.2rem; padding: 0; }
+    a { color: var(--accent); }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+    .meta { color: var(--muted); font-size: .92rem; }
+    .lang { display: inline-block; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Política de Privacidade</h1>
+      <p class="meta">Última atualização: 2026-07-04 · v1.1</p>
+      <p>Esta Política de Privacidade descreve como o aplicativo Nutryum trata seus dados pessoais. O Nutryum é desenvolvido e mantido por um desenvolvedor independente (pessoa física), que atua como controlador dos dados. Contato: fellipeduarte45@gmail.com. O app é &quot;local-first&quot;: a maior parte dos seus dados fica guardada de forma criptografada no seu próprio dispositivo; apenas parte é sincronizada com nossos servidores para funcionar (conta, perfil e recursos de comunidade).</p>
+      <a class="lang" href="./privacy-policy.en.html">English</a>
+    </header>
+    
+      <section>
+        <h2>1. Dados que coletamos</h2>
+        <p>Conta e perfil: e-mail e senha (a senha é guardada apenas como hash, nunca em texto), nome de usuário, nome de exibição, bio, foto de perfil e capa, região/cidade/país, links sociais e um hash (código irreversível) do seu telefone — usado só para sugerir contatos, nunca guardamos o número em si.</p>
+<p>Dados de saúde e atividade (dados sensíveis): peso e histórico, medidas corporais, fotos de progresso corporal salvas no dispositivo, sexo biológico, data de nascimento/idade, metas (calorias, macros, passos, hidratação), registros de alimentação e refeições, treinos, e atividades de cardio — incluindo localização/GPS e rotas quando você usa o rastreamento.</p>
+<p>Comunidade: quem você segue, publicações no feed, grupos, posições em rankings, curtidas, comentários, bloqueios e denúncias.</p>
+<p>Assistente de IA: as mensagens que você envia ao assistente e as fotos de refeição enviadas para análise nutricional, além de um contador de uso diário.</p>
+<p>Dados técnicos: relatórios de erro/diagnóstico, eventos de analytics de produto sem PII (por exemplo, onboarding concluído ou paywall exibido), preferências de notificação e configurações do app. A autenticação por biometria, quando ativada, é processada pelo sistema do seu dispositivo e não sai dele.</p>
+      </section>
+
+      <section>
+        <h2>2. Como usamos seus dados</h2>
+        <p>Fazer o app funcionar: registrar alimentação, treinos e cardio, calcular metas e estatísticas, lembretes e notificações.</p>
+<p>Recursos de comunidade: feed, seguidores, grupos e rankings, conforme as suas configurações de privacidade.</p>
+<p>Assistente de IA: responder suas perguntas e analisar fotos de refeição.</p>
+<p>Manutenção, melhoria e analytics: diagnosticar erros, entender funis agregados de ativação/conversão e melhorar a estabilidade do app.</p>
+      </section>
+
+      <section>
+        <h2>3. Base legal (LGPD)</h2>
+        <p>Tratamos seus dados com base no seu consentimento, na execução do serviço que você solicita ao usar o app, e no legítimo interesse para segurança e diagnóstico. Para dados sensíveis de saúde, o tratamento se dá mediante o seu consentimento e para a finalidade específica de oferecer os recursos do app. Você pode revogar o consentimento a qualquer momento, encerrando o uso e/ou excluindo sua conta.</p>
+      </section>
+
+      <section>
+        <h2>4. Armazenamento e segurança</h2>
+        <p>A maior parte dos seus dados fica no seu dispositivo, em um banco de dados criptografado (SQLCipher).</p>
+<p>Os dados de conta, perfil e comunidade são sincronizados com o Supabase (nosso provedor de backend), com transmissão criptografada (HTTPS) e regras de acesso por usuário.</p>
+<p>As chaves dos provedores de IA ficam apenas no servidor (proxy) — o app nunca as expõe.</p>
+<p>Nenhum método é 100% seguro, mas adotamos medidas técnicas razoáveis para proteger seus dados.</p>
+      </section>
+
+      <section>
+        <h2>5. Compartilhamento com terceiros (operadores)</h2>
+        <p>Não vendemos seus dados. Compartilhamos o mínimo necessário com prestadores que processam dados em nosso nome:</p>
+<ul>
+  <li>Supabase — backend, autenticação, banco de dados e armazenamento de imagens.</li>
+  <li>Anthropic (Claude) — processa as mensagens do assistente de IA.</li>
+  <li>Google (Gemini) — processa as fotos de refeição para análise nutricional.</li>
+  <li>Sentry — relatórios de erro/diagnóstico.</li>
+  <li>PostHog — analytics de produto e funis, sem nome, e-mail, telefone ou conteúdo livre.</li>
+  <li>Mapbox — mapas exibidos no rastreamento de cardio.</li>
+  <li>OpenFoodFacts — consultas de produtos por código de barras.</li>
+  <li>Apple Saúde / Health Connect — quando autorizado, lê dados de passos e sono do seu dispositivo.</li>
+</ul>
+<p>Esses provedores podem processar dados fora do Brasil (ex.: Estados Unidos). Ao usar o app, você concorda com essa transferência internacional, realizada com salvaguardas adequadas.</p>
+      </section>
+
+      <section>
+        <h2>6. Comunidade e visibilidade</h2>
+        <p>Recursos de comunidade são privados por padrão. O que fica visível para outras pessoas depende das suas configurações de privacidade (ser descoberto em buscas, compartilhar atividades no feed e participar de rankings). Você controla isso em Ajustes → Privacidade e descoberta e pode alterar a qualquer momento.</p>
+      </section>
+
+      <section>
+        <h2>7. Seus direitos</h2>
+        <p>Conforme a LGPD, você pode:</p>
+<ul>
+  <li>Acessar e corrigir seus dados (na tela de perfil).</li>
+  <li>Exportar seus dados (Perfil → Backup), por portabilidade.</li>
+  <li>Excluir sua conta (Perfil → Excluir conta). A exclusão tem uma carência de 3 dias para arrependimento; depois disso, seus dados são apagados de forma permanente.</li>
+  <li>Revogar consentimentos e obter informações sobre o tratamento, pelo e-mail de contato.</li>
+</ul>
+      </section>
+
+      <section>
+        <h2>8. Retenção e exclusão</h2>
+        <p>Mantemos seus dados enquanto sua conta existir. Ao solicitar a exclusão da conta, há uma carência de 3 dias na qual você pode desfazer; passado o prazo, os dados do servidor (perfil, comunidade, uso de IA) e os arquivos associados são removidos, e o banco local do dispositivo é apagado na próxima abertura do app.</p>
+      </section>
+
+      <section>
+        <h2>9. Crianças</h2>
+        <p>O Nutryum não é direcionado a menores de 13 anos e não coletamos intencionalmente dados de crianças. Se você acredita que uma criança nos forneceu dados, entre em contato para que possamos removê-los.</p>
+      </section>
+
+      <section>
+        <h2>10. Alterações nesta política</h2>
+        <p>Podemos atualizar esta política. Quando isso acontecer, alteramos a data de vigência abaixo e, quando apropriado, avisamos no app. O uso contínuo após a atualização significa concordância com a versão revisada.</p>
+      </section>
+
+      <section>
+        <h2>11. Contato</h2>
+        <p>Dúvidas, pedidos relacionados aos seus dados ou ao encarregado de dados: fellipeduarte45@gmail.com.</p>
+      </section>
+  </main>
+</body>
+</html>
