@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy — Nutryum</title>
+  <title>Privacy Policy — Avant</title>
   <style>
     :root { color-scheme: light dark; --bg:#f7f8f6; --fg:#171c1a; --muted:#56615c; --line:#dce3df; --accent:#2c7a6b; --card:#fff; }
     @media (prefers-color-scheme: dark) { :root { --bg:#0e1311; --fg:#e8eeeb; --muted:#aeb8b3; --line:#253029; --accent:#4fbfa8; --card:#141a18; } }
@@ -26,25 +26,25 @@
   <main>
     <header>
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: 2026-07-04 · v1.1</p>
-      <p>This Privacy Policy explains how the Nutryum app handles your personal data. Nutryum is developed and maintained by an independent developer (an individual), who acts as the data controller. Contact: fellipeduarte45@gmail.com. The app is &quot;local-first&quot;: most of your data is stored encrypted on your own device; only part of it is synced to our servers to make the app work (account, profile and community features).</p>
+      <p class="meta">Last updated: 2026-08-19 · v1.3</p>
+      <p>This Privacy Policy explains how the Avant app handles your personal data. Avant is developed and maintained by an independent developer (an individual), who acts as the data controller. Contact: avantapp0@gmail.com. The app is &quot;local-first&quot;: most of your data is stored encrypted on your own device; only part of it is synced to our servers to make the app work (account and profile).</p>
       <a class="lang" href="./privacy-policy.pt.html">Português</a>
     </header>
     
       <section>
         <h2>1. Data we collect</h2>
-        <p>Account and profile: email and password (the password is stored only as a hash, never in plain text), username, display name, bio, profile and cover photo, region/city/country, social links, and a hash (irreversible code) of your phone number — used only to suggest contacts; we never store the number itself.</p>
+        <p>Account and profile: email and password (the password is stored only as a hash, never in plain text), username, display name, bio, profile and cover photo, region/city/country, and social links.</p>
 <p>Health and activity data (sensitive data): weight and history, body measurements, body progress photos stored on device, biological sex, date of birth/age, goals (calories, macros, steps, hydration), food and meal logs, workouts, and cardio activities — including location/GPS and routes when you use tracking.</p>
-<p>Community: who you follow, feed posts, groups, leaderboard rankings, kudos, comments, blocks and reports.</p>
 <p>AI assistant: the messages you send to the assistant and the meal photos sent for nutritional analysis, plus a daily usage counter.</p>
+<p>Support and suggestions: the subject and message you write and, if you choose to provide one, a contact phone number — the phone is optional, used only to handle that ticket, never sent by email, and deleted as soon as the ticket is closed. Your account email, your plan and the app version are sent along, so we can reply and reproduce the scenario.</p>
 <p>Technical data: error/diagnostic reports, product analytics events without PII (for example, onboarding completed or paywall viewed), notification preferences and app settings. Biometric authentication, when enabled, is processed by your device's system and never leaves it.</p>
       </section>
 
       <section>
         <h2>2. How we use your data</h2>
         <p>Run the app: log food, workouts and cardio, compute goals and statistics, reminders and notifications.</p>
-<p>Community features: feed, follows, groups and leaderboards, according to your privacy settings.</p>
 <p>AI assistant: answer your questions and analyze meal photos.</p>
+<p>Support and suggestions: reply to your tickets, investigate reported problems and prioritize app improvements.</p>
 <p>Maintenance, improvement and analytics: diagnose errors, understand aggregate activation/conversion funnels, and improve app stability.</p>
       </section>
 
@@ -56,7 +56,7 @@
       <section>
         <h2>4. Storage and security</h2>
         <p>Most of your data stays on your device in an encrypted database (SQLCipher).</p>
-<p>Account, profile and community data are synced to Supabase (our backend provider) over encrypted connections (HTTPS) with per-user access rules.</p>
+<p>Account and profile data are synced to Supabase (our backend provider) over encrypted connections (HTTPS) with per-user access rules.</p>
 <p>AI provider keys live only on the server (proxy) — the app never exposes them.</p>
 <p>No method is 100% secure, but we apply reasonable technical measures to protect your data.</p>
       </section>
@@ -66,6 +66,7 @@
         <p>We do not sell your data. We share the minimum needed with providers that process data on our behalf:</p>
 <ul>
   <li>Supabase — backend, authentication, database and image storage.</li>
+  <li>Resend — delivers to our support mailbox the notification of the support tickets and suggestions you send us. The contact phone number is not included in that notification.</li>
   <li>Anthropic (Claude) — processes the AI assistant messages.</li>
   <li>Google (Gemini) — processes meal photos for nutritional analysis.</li>
   <li>Sentry — error/diagnostic reports.</li>
@@ -78,12 +79,7 @@
       </section>
 
       <section>
-        <h2>6. Community and visibility</h2>
-        <p>Community features are private by default. What is visible to others depends on your privacy settings (being discoverable in search, sharing activities in the feed, and joining leaderboards). You control this in Settings → Privacy and discovery and can change it anytime.</p>
-      </section>
-
-      <section>
-        <h2>7. Your rights</h2>
+        <h2>6. Your rights</h2>
         <p>Under the LGPD you can:</p>
 <ul>
   <li>Access and correct your data (on the profile screen).</li>
@@ -94,23 +90,24 @@
       </section>
 
       <section>
-        <h2>8. Retention and deletion</h2>
-        <p>We keep your data while your account exists. When you request account deletion, there is a 3-day grace period during which you can undo it; after the deadline, server data (profile, community, AI usage) and associated files are removed, and the local device database is wiped on the next app launch.</p>
+        <h2>7. Retention and deletion</h2>
+        <p>We keep your data while your account exists. When you request account deletion, there is a 3-day grace period during which you can undo it; after the deadline, server data (profile and AI usage) and associated files are removed, and the local device database is wiped on the next app launch.</p>
+<p>Support tickets and suggestions are deleted along with your account. The contact phone number is deleted before that: as soon as the ticket is closed. Since it never travels by email, no copy of it remains in our support mailbox. The rest of the ticket goes out in the email notification and may remain in that mailbox; if you want those copies removed as well, ask via the contact email.</p>
       </section>
 
       <section>
-        <h2>9. Children</h2>
-        <p>Nutryum is not directed to children under 13, and we do not knowingly collect children's data. If you believe a child has provided us data, contact us so we can remove it.</p>
+        <h2>8. Children</h2>
+        <p>Avant is not directed to children under 13, and we do not knowingly collect children's data. If you believe a child has provided us data, contact us so we can remove it.</p>
       </section>
 
       <section>
-        <h2>10. Changes to this policy</h2>
+        <h2>9. Changes to this policy</h2>
         <p>We may update this policy. When we do, we change the effective date below and, where appropriate, notify you in the app. Continued use after an update means you agree to the revised version.</p>
       </section>
 
       <section>
-        <h2>11. Contact</h2>
-        <p>Questions or requests about your data or the data officer: fellipeduarte45@gmail.com.</p>
+        <h2>10. Contact</h2>
+        <p>Questions or requests about your data or the data officer: avantapp0@gmail.com.</p>
       </section>
   </main>
 </body>
