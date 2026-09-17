@@ -26,17 +26,18 @@
   <main>
     <header>
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: 2026-08-19 · v1.3</p>
-      <p>This Privacy Policy explains how the Avant app handles your personal data. Avant is developed and maintained by an independent developer (an individual), who acts as the data controller. Contact: avantapp0@gmail.com. The app is &quot;local-first&quot;: most of your data is stored encrypted on your own device; only part of it is synced to our servers to make the app work (account and profile).</p>
+      <p class="meta">Last updated: 2026-09-17 · v1.8</p>
+      <p>This Privacy Policy explains how the Avant app handles your personal data. Avant is developed and maintained by Manuel da Silva Vieira (a Brazilian sole proprietorship, CNPJ 66.501.691/0001-15), who acts as the data controller. Contact: contato@avantsociety.com.br. The app is &quot;local-first&quot;: your data is stored encrypted on your own device. Part of it goes to our servers to make the app work (account and public profile). Your health and activity data only leaves the device if you turn syncing on — it is off by default, and section 5 explains exactly what is uploaded and what is not.</p>
       <a class="lang" href="./privacy-policy.pt.html">Português</a>
     </header>
     
       <section>
         <h2>1. Data we collect</h2>
         <p>Account and profile: email and password (the password is stored only as a hash, never in plain text), username, display name, bio, profile and cover photo, region/city/country, and social links.</p>
-<p>Health and activity data (sensitive data): weight and history, body measurements, body progress photos stored on device, biological sex, date of birth/age, goals (calories, macros, steps, hydration), food and meal logs, workouts, and cardio activities — including location/GPS and routes when you use tracking.</p>
-<p>AI assistant: the messages you send to the assistant and the meal photos sent for nutritional analysis, plus a daily usage counter.</p>
+<p>Health and activity data (sensitive data): weight and history, body measurements, body progress photos stored on device, biological sex, date of birth/age, goals (calories, macros, steps, hydration), food and meal logs, workouts, and cardio activities — including location/GPS and routes when you use tracking. This data stays on your device. It is only sent to our servers if you turn syncing on (section 5). Progress photos are never uploaded.</p>
+<p>AI assistant: the messages you send to the assistant, the monthly check-in and the onboarding profile reading (quiz answers and computed metrics), and the meal photos sent for nutrition analysis. On the server we keep usage counters (messages, tokens, photos per day) and an operational per-request log, without message content, for 30 days.</p>
 <p>Support and suggestions: the subject and message you write and, if you choose to provide one, a contact phone number — the phone is optional, used only to handle that ticket, never sent by email, and deleted as soon as the ticket is closed. Your account email, your plan and the app version are sent along, so we can reply and reproduce the scenario.</p>
+<p>Subscription: purchase identifier, product, store, start and expiry dates and status, received from RevenueCat/Google Play. We never receive card numbers.</p>
 <p>Technical data: error/diagnostic reports, product analytics events without PII (for example, onboarding completed or paywall viewed), notification preferences and app settings. Biometric authentication, when enabled, is processed by your device's system and never leaves it.</p>
       </section>
 
@@ -46,11 +47,13 @@
 <p>AI assistant: answer your questions and analyze meal photos.</p>
 <p>Support and suggestions: reply to your tickets, investigate reported problems and prioritize app improvements.</p>
 <p>Maintenance, improvement and analytics: diagnose errors, understand aggregate activation/conversion funnels, and improve app stability.</p>
+<p>Syncing (if you turn it on): keeping a copy of your data in your account so you can recover it when switching devices or reinstalling the app.</p>
       </section>
 
       <section>
         <h2>3. Legal basis (LGPD)</h2>
         <p>We process your data based on your consent, the performance of the service you request by using the app, and legitimate interest for security and diagnostics. Sensitive health data is processed with your consent and for the specific purpose of providing the app's features. You can withdraw consent at any time by stopping use and/or deleting your account.</p>
+<p>Health data is sensitive personal data. Uploading it to our servers happens only with your specific, highlighted consent (LGPD art. 11, I), given separately from accepting this policy, and it can be revoked at any time in Settings → Sync.</p>
       </section>
 
       <section>
@@ -62,52 +65,84 @@
       </section>
 
       <section>
-        <h2>5. Sharing with third parties (processors)</h2>
-        <p>We do not sell your data. We share the minimum needed with providers that process data on our behalf:</p>
-<ul>
-  <li>Supabase — backend, authentication, database and image storage.</li>
-  <li>Resend — delivers to our support mailbox the notification of the support tickets and suggestions you send us. The contact phone number is not included in that notification.</li>
-  <li>Anthropic (Claude) — processes the AI assistant messages.</li>
-  <li>Google (Gemini) — processes meal photos for nutritional analysis.</li>
-  <li>Sentry — error/diagnostic reports.</li>
-  <li>PostHog — product analytics and funnels, without name, email, phone number or free-text content.</li>
-  <li>Mapbox — maps shown in cardio tracking.</li>
-  <li>OpenFoodFacts — barcode product lookups.</li>
-  <li>Apple Health / Health Connect — when authorized, reads step and sleep data from your device.</li>
-</ul>
-<p>These providers may process data outside Brazil (e.g., the United States). By using the app, you agree to this international transfer, carried out with appropriate safeguards.</p>
+        <h2>5. Syncing across devices (optional)</h2>
+        <p>Syncing is off by default. None of your health and activity data leaves the device until you turn it on in Settings → Sync.</p>
+<p>Turning it on requires a specific consent for that purpose, separate from accepting this policy. We record the date, time and policy version at the moment you turn it on — the timestamp comes from our server, not your device.</p>
+<p>What is uploaded: profile and goals; meals, recipes and meal plans; strength workouts, exercises and plans; cardio sessions (metrics only, without the route trace); weight, history and body measurements; steps, active calories, heart rate, sleep and hydration; missions, badges, XP and streak freezes; your reminder preferences.</p>
+<p>What is never uploaded, even with syncing on: progress photos; the GPS trace of your routes; your conversations with the AI assistant; your phone number; whether you use biometrics to unlock the app; and the permissions and scheduled reminders on this device, which are set up again on each device.</p>
+<p>Where it lives: in separate tables on Supabase, with access rules tying each row to its owner — no other user of the app can read yours. The database is hosted in the São Paulo region. Transmission is encrypted (HTTPS).</p>
+<p>An important caveat: this copy is not encrypted with a key only you hold. Unlike the database on your device, it can technically be accessed by us and by the hosting provider. If you would rather your health data not sit on any server, leave syncing off and use the backup export (Profile → Backup) so you are not tied to a single device.</p>
+<p>What it is for: recovering your data when you switch devices, reinstall the app, or clear its data. We do not use this copy for advertising or to train AI models, and we do not share it with third parties beyond the hosting provider.</p>
+<p>Turning it off deletes it. When you turn syncing off, the copy kept in your account is deleted from our servers. Your data stays on your device. The deleted copy cannot be recovered.</p>
       </section>
 
       <section>
-        <h2>6. Your rights</h2>
+        <h2>6. Sharing with third parties (processors)</h2>
+        <p>We do not sell your data. We share the minimum necessary with providers that process data on our behalf (processors):</p>
+<ul>
+  <li>Supabase — backend, authentication, database, server functions and image storage. If you turn sync on, this is where the copy of your health data is hosted (São Paulo region).</li>
+  <li>Anthropic (Claude) — processes the AI assistant messages, the monthly check-in and the profile reading. Under Anthropic's commercial terms this content is not used to train models.</li>
+  <li>Google (Gemini) — processes meal photos for nutrition analysis on the paid API tier, where content is not used to train models nor reviewed by humans.</li>
+  <li>RevenueCat and Google Play — subscriptions and in-app purchases (product, dates, status). Payment itself is handled by Google Play.</li>
+  <li>Resend — delivers to our inbox the notice of support requests and suggestions you send us, and internal cost reports. Your phone number is not included.</li>
+  <li>Sentry — error/diagnostic reports, without health data or message content.</li>
+  <li>PostHog — product and funnel analytics with an anonymous installation id, without name, e-mail, phone or free text.</li>
+  <li>Mapbox and OpenStreetMap — maps shown in cardio tracking (© Mapbox © OpenStreetMap).</li>
+  <li>WorkoutX — exercise animations, served through our server; WorkoutX only receives the animation id.</li>
+  <li>Open Food Facts — barcode product lookups (database under the Open Database License); receives the barcode queried.</li>
+  <li>Apple Health / Health Connect — when authorised, reads steps, sleep, heart rate and active calories from your device. That data is never used for advertising.</li>
+</ul>
+<p>International transfer: Anthropic, Google, RevenueCat, Resend, Sentry, PostHog, Mapbox and WorkoutX process data outside Brazil (mainly in the United States). The transfer relies on your specific consent to use those features and on data processing agreements (DPA) with each processor, including contractual protection clauses compatible with the LGPD (art. 33). You can use the app without the AI assistant and photo analysis; in that case nothing of yours goes to Anthropic or Google.</p>
+      </section>
+
+      <section>
+        <h2>7. Advertising</h2>
+        <p>Avant does not display ads or integrate advertising SDKs, on either the free or Premium plan.</p>
+<p>Your health, nutrition, training, weight, sleep, and location data are not used for advertising or shared for that purpose.</p>
+      </section>
+
+      <section>
+        <h2>8. Your rights</h2>
         <p>Under the LGPD you can:</p>
 <ul>
   <li>Access and correct your data (on the profile screen).</li>
   <li>Export your data (Profile → Backup), for portability.</li>
   <li>Delete your account (Profile → Delete account). Deletion has a 3-day grace period to change your mind; after that, your data is permanently erased.</li>
   <li>Withdraw consent and request information about processing, via the contact email.</li>
+  <li>Turn syncing off at any time (Settings → Sync). Doing so deletes the copy kept in your account.</li>
+  <li>Keep your health data on your device only, without syncing, without losing access to the app.</li>
 </ul>
       </section>
 
       <section>
-        <h2>7. Retention and deletion</h2>
+        <h2>9. Retention and deletion</h2>
         <p>We keep your data while your account exists. When you request account deletion, there is a 3-day grace period during which you can undo it; after the deadline, server data (profile and AI usage) and associated files are removed, and the local device database is wiped on the next app launch.</p>
 <p>Support tickets and suggestions are deleted along with your account. The contact phone number is deleted before that: as soon as the ticket is closed. Since it never travels by email, no copy of it remains in our support mailbox. The rest of the ticket goes out in the email notification and may remain in that mailbox; if you want those copies removed as well, ask via the contact email.</p>
+<p>The synced copy exists while syncing is on. Turning it off deletes the copy from our servers immediately. Deleting your account deletes it along with everything else, after the 3-day grace period.</p>
+<p>Retention by data type: account and profile — while the account exists; health and activity data — on your device, under your control, and in the synced copy while sync is on; AI assistant messages — only on your device (AI providers receive them to answer and do not keep them beyond processing); AI usage counters and the per-request operational log — 30 days; error reports — 90 days in Sentry; analytics events — 12 months in PostHog, anonymous; subscription data — while there is a subscription or a tax obligation.</p>
       </section>
 
       <section>
-        <h2>8. Children</h2>
-        <p>Avant is not directed to children under 13, and we do not knowingly collect children's data. If you believe a child has provided us data, contact us so we can remove it.</p>
+        <h2>10. Minimum age</h2>
+        <p>Avant is for adults (18+): it handles health data and suggests food and training, which is not suitable for minors. Sign-up asks for your date of birth and refuses anyone under 18. If you believe a minor has created an account, contact us so we can close it and delete the data.</p>
       </section>
 
       <section>
-        <h2>9. Changes to this policy</h2>
+        <h2>11. AI assistant</h2>
+        <p>When you use the chat, the monthly check-in, photo analysis or the profile reading, you are talking to an artificial intelligence — the app says so on screen. Answers are generated automatically, may contain errors and are educational wellness guidance, not diagnosis or prescription.</p>
+<p>What goes to the providers: to Anthropic, the text of your messages and the context the assistant reads from your diary (profile, goals, health constraints you recorded, daily summary, recent workouts and meals) — only what is needed to answer; to Google, the meal photo. None of it is used to train models, and we do not use your conversations for advertising or to train models of our own.</p>
+<p>What does not go: your GPS track, progress photos, e-mail, phone and password.</p>
+<p>Usage limits (messages, tokens and photos per day; one check-in per month on the free plan) are counted on the server to keep the service sustainable; the counters do not store content.</p>
+      </section>
+
+      <section>
+        <h2>12. Changes to this policy</h2>
         <p>We may update this policy. When we do, we change the effective date below and, where appropriate, notify you in the app. Continued use after an update means you agree to the revised version.</p>
       </section>
 
       <section>
-        <h2>10. Contact</h2>
-        <p>Questions or requests about your data or the data officer: avantapp0@gmail.com.</p>
+        <h2>13. Contact</h2>
+        <p>Questions or requests about your data or the data officer: contato@avantsociety.com.br.</p>
       </section>
   </main>
 </body>

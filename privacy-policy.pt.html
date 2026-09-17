@@ -26,17 +26,18 @@
   <main>
     <header>
       <h1>Política de Privacidade</h1>
-      <p class="meta">Última atualização: 2026-08-19 · v1.3</p>
-      <p>Esta Política de Privacidade descreve como o aplicativo Avant trata seus dados pessoais. O Avant é desenvolvido e mantido por um desenvolvedor independente (pessoa física), que atua como controlador dos dados. Contato: avantapp0@gmail.com. O app é &quot;local-first&quot;: a maior parte dos seus dados fica guardada de forma criptografada no seu próprio dispositivo; apenas parte é sincronizada com nossos servidores para funcionar (conta e perfil).</p>
+      <p class="meta">Última atualização: 2026-09-17 · v1.8</p>
+      <p>Esta Política de Privacidade descreve como o aplicativo Avant trata seus dados pessoais. O Avant é desenvolvido e mantido por Manuel da Silva Vieira (MEI), inscrito no CNPJ sob o nº 66.501.691/0001-15, que atua como controlador dos dados. Contato: contato@avantsociety.com.br. O app é &quot;local-first&quot;: seus dados ficam guardados de forma criptografada no seu próprio dispositivo. Parte deles vai para nossos servidores para o app funcionar (conta e perfil público). Seus dados de saúde e atividade só saem do aparelho se você ligar a sincronização — ela vem desligada, e a seção 5 explica exatamente o que sobe e o que não sobe.</p>
       <a class="lang" href="./privacy-policy.en.html">English</a>
     </header>
     
       <section>
         <h2>1. Dados que coletamos</h2>
         <p>Conta e perfil: e-mail e senha (a senha é guardada apenas como hash, nunca em texto), nome de usuário, nome de exibição, bio, foto de perfil e capa, região/cidade/país e links sociais.</p>
-<p>Dados de saúde e atividade (dados sensíveis): peso e histórico, medidas corporais, fotos de progresso corporal salvas no dispositivo, sexo biológico, data de nascimento/idade, metas (calorias, macros, passos, hidratação), registros de alimentação e refeições, treinos, e atividades de cardio — incluindo localização/GPS e rotas quando você usa o rastreamento.</p>
-<p>Assistente de IA: as mensagens que você envia ao assistente e as fotos de refeição enviadas para análise nutricional, além de um contador de uso diário.</p>
+<p>Dados de saúde e atividade (dados sensíveis): peso e histórico, medidas corporais, fotos de progresso corporal salvas no dispositivo, sexo biológico, data de nascimento/idade, metas (calorias, macros, passos, hidratação), registros de alimentação e refeições, treinos, e atividades de cardio — incluindo localização/GPS e rotas quando você usa o rastreamento. Esses dados ficam no seu aparelho. Eles só são enviados aos nossos servidores se você ligar a sincronização (seção 5). As fotos de progresso corporal nunca são enviadas.</p>
+<p>Assistente de IA: as mensagens que você envia ao assistente, a consultoria mensal e a leitura de perfil do onboarding (respostas do quiz e métricas calculadas), e as fotos de refeição enviadas para análise nutricional. No servidor guardamos contadores de uso (mensagens, tokens, fotos por dia) e um registro operacional por chamada, sem o conteúdo das mensagens, por 30 dias.</p>
 <p>Suporte e sugestões: o tema e a mensagem que você escreve e, se você quiser informar, um número de telefone para contato — o telefone é opcional, usado apenas para tratar aquele chamado, nunca enviado por e-mail, e apagado assim que o chamado é concluído. Junto vão o e-mail da sua conta, o seu plano e a versão do app, para conseguirmos responder e reproduzir o cenário.</p>
+<p>Assinatura: identificador da compra, produto, loja, datas de início e vencimento e status, recebidos do RevenueCat/Google Play. Nunca recebemos número de cartão.</p>
 <p>Dados técnicos: relatórios de erro/diagnóstico, eventos de analytics de produto sem PII (por exemplo, onboarding concluído ou paywall exibido), preferências de notificação e configurações do app. A autenticação por biometria, quando ativada, é processada pelo sistema do seu dispositivo e não sai dele.</p>
       </section>
 
@@ -46,11 +47,13 @@
 <p>Assistente de IA: responder suas perguntas e analisar fotos de refeição.</p>
 <p>Suporte e sugestões: responder aos seus chamados, apurar os problemas relatados e priorizar melhorias do app.</p>
 <p>Manutenção, melhoria e analytics: diagnosticar erros, entender funis agregados de ativação/conversão e melhorar a estabilidade do app.</p>
+<p>Sincronização (se você ligar): guardar uma cópia dos seus dados na sua conta, para você recuperá-los ao trocar de aparelho ou reinstalar o app.</p>
       </section>
 
       <section>
         <h2>3. Base legal (LGPD)</h2>
         <p>Tratamos seus dados com base no seu consentimento, na execução do serviço que você solicita ao usar o app, e no legítimo interesse para segurança e diagnóstico. Para dados sensíveis de saúde, o tratamento se dá mediante o seu consentimento e para a finalidade específica de oferecer os recursos do app. Você pode revogar o consentimento a qualquer momento, encerrando o uso e/ou excluindo sua conta.</p>
+<p>Dados de saúde são dados pessoais sensíveis. O envio deles para nossos servidores acontece apenas com o seu consentimento específico e destacado (art. 11, I, da LGPD), dado separadamente do aceite desta política, e pode ser revogado a qualquer momento em Configurações → Sincronização.</p>
       </section>
 
       <section>
@@ -62,52 +65,84 @@
       </section>
 
       <section>
-        <h2>5. Compartilhamento com terceiros (operadores)</h2>
-        <p>Não vendemos seus dados. Compartilhamos o mínimo necessário com prestadores que processam dados em nosso nome:</p>
-<ul>
-  <li>Supabase — backend, autenticação, banco de dados e armazenamento de imagens.</li>
-  <li>Resend — entrega à nossa caixa de atendimento o aviso dos chamados de suporte e das sugestões que você nos envia. O telefone de contato não vai nesse aviso.</li>
-  <li>Anthropic (Claude) — processa as mensagens do assistente de IA.</li>
-  <li>Google (Gemini) — processa as fotos de refeição para análise nutricional.</li>
-  <li>Sentry — relatórios de erro/diagnóstico.</li>
-  <li>PostHog — analytics de produto e funis, sem nome, e-mail, telefone ou conteúdo livre.</li>
-  <li>Mapbox — mapas exibidos no rastreamento de cardio.</li>
-  <li>OpenFoodFacts — consultas de produtos por código de barras.</li>
-  <li>Apple Saúde / Health Connect — quando autorizado, lê dados de passos e sono do seu dispositivo.</li>
-</ul>
-<p>Esses provedores podem processar dados fora do Brasil (ex.: Estados Unidos). Ao usar o app, você concorda com essa transferência internacional, realizada com salvaguardas adequadas.</p>
+        <h2>5. Sincronização entre aparelhos (opcional)</h2>
+        <p>A sincronização vem desligada. Nada dos seus dados de saúde e atividade vai para nossos servidores enquanto você não ligá-la em Configurações → Sincronização.</p>
+<p>Ligar exige um consentimento específico para isso, separado do aceite desta política. Registramos a data, a hora e a versão desta política no momento em que você liga — o horário é o do nosso servidor, não o do seu aparelho.</p>
+<p>O que sobe quando você liga: perfil e metas; refeições, receitas e planos alimentares; treinos de força, exercícios e planos; sessões de cardio (as métricas, sem o traçado do percurso); peso, histórico e medidas corporais; passos, calorias ativas, frequência cardíaca, sono e hidratação; missões, conquistas, XP e proteções de ofensiva; suas preferências de lembretes.</p>
+<p>O que não sobe, mesmo com a sincronização ligada: fotos de progresso corporal; o traçado de GPS dos seus percursos; suas conversas com o assistente de IA; seu número de telefone; se você usa biometria para abrir o app; e as permissões e lembretes agendados neste aparelho, que são reconfigurados em cada aparelho.</p>
+<p>Onde fica: em tabelas separadas no Supabase, com regras de acesso que vinculam cada linha ao dono — nenhum outro usuário do app consegue ler as suas. O banco está hospedado na região de São Paulo. A transmissão é criptografada (HTTPS).</p>
+<p>Uma ressalva importante: essa cópia não é criptografada com uma chave que só você tem. Diferente do banco no seu aparelho, ela pode ser tecnicamente acessada por nós e pelo provedor de hospedagem. Se você prefere que seus dados de saúde não fiquem em servidor nenhum, mantenha a sincronização desligada e use a exportação de backup (Perfil → Backup) para não depender de um só aparelho.</p>
+<p>Para que serve: recuperar seus dados quando você troca de aparelho, reinstala o app ou limpa os dados. Não usamos essa cópia para publicidade, para treinar modelos de IA, nem a compartilhamos com terceiros além do provedor de hospedagem.</p>
+<p>Desligar apaga. Ao desligar a sincronização, a cópia guardada na sua conta é apagada dos nossos servidores. Seus dados continuam no seu aparelho. A cópia apagada não é recuperável.</p>
       </section>
 
       <section>
-        <h2>6. Seus direitos</h2>
+        <h2>6. Compartilhamento com terceiros (operadores)</h2>
+        <p>Não vendemos seus dados. Compartilhamos o mínimo necessário com prestadores que processam dados em nosso nome (operadores):</p>
+<ul>
+  <li>Supabase — backend, autenticação, banco de dados, funções de servidor e armazenamento de imagens. Se você ligar a sincronização, é onde a cópia dos seus dados de saúde fica hospedada (região de São Paulo).</li>
+  <li>Anthropic (Claude) — processa as mensagens do assistente de IA, a consultoria mensal e a leitura de perfil. Pelos termos comerciais da Anthropic, esse conteúdo não é usado para treinar modelos.</li>
+  <li>Google (Gemini) — processa as fotos de refeição para análise nutricional, na modalidade paga da API, em que o conteúdo não é usado para treinar modelos nem revisado por pessoas.</li>
+  <li>RevenueCat e Google Play — assinaturas e compras no app (produto, datas, status). O pagamento em si é do Google Play.</li>
+  <li>Resend — entrega à nossa caixa de atendimento o aviso dos chamados de suporte e das sugestões que você nos envia, e os relatórios internos de custo. O telefone de contato não vai nesse aviso.</li>
+  <li>Sentry — relatórios de erro/diagnóstico, sem dados de saúde nem conteúdo de mensagens.</li>
+  <li>PostHog — analytics de produto e funis, com identificador anônimo de instalação, sem nome, e-mail, telefone ou conteúdo livre.</li>
+  <li>Mapbox e OpenStreetMap — mapas exibidos no rastreamento de cardio (© Mapbox © OpenStreetMap).</li>
+  <li>WorkoutX — animações de exercícios, servidas pelo nosso servidor; o WorkoutX recebe apenas o identificador da animação.</li>
+  <li>Open Food Facts — consultas de produtos por código de barras (base sob Open Database License); recebe o código consultado.</li>
+  <li>Apple Saúde / Health Connect — quando autorizado, lê dados de passos, sono, frequência cardíaca e calorias ativas do seu dispositivo. Esses dados nunca são usados para publicidade.</li>
+</ul>
+<p>Transferência internacional: Anthropic, Google, RevenueCat, Resend, Sentry, PostHog, Mapbox e WorkoutX processam dados fora do Brasil (principalmente nos Estados Unidos). A transferência se apoia no seu consentimento específico para o uso dessas funções e em contratos de tratamento de dados (DPA) com cada operador, que incluem cláusulas contratuais de proteção compatíveis com a LGPD (art. 33). Você pode usar o app sem o assistente de IA e sem a análise de foto; nesse caso nada seu vai para a Anthropic ou para o Google.</p>
+      </section>
+
+      <section>
+        <h2>7. Publicidade</h2>
+        <p>O Avant não exibe anúncios e não integra SDK de publicidade, tanto no plano gratuito quanto no Premium.</p>
+<p>Seus dados de saúde, alimentação, treino, peso, sono e localização não são usados para publicidade nem compartilhados para essa finalidade.</p>
+      </section>
+
+      <section>
+        <h2>8. Seus direitos</h2>
         <p>Conforme a LGPD, você pode:</p>
 <ul>
   <li>Acessar e corrigir seus dados (na tela de perfil).</li>
   <li>Exportar seus dados (Perfil → Backup), por portabilidade.</li>
   <li>Excluir sua conta (Perfil → Excluir conta). A exclusão tem uma carência de 3 dias para arrependimento; depois disso, seus dados são apagados de forma permanente.</li>
   <li>Revogar consentimentos e obter informações sobre o tratamento, pelo e-mail de contato.</li>
+  <li>Revogar a sincronização a qualquer momento (Configurações → Sincronização). A revogação apaga a cópia guardada na sua conta.</li>
+  <li>Manter seus dados de saúde apenas no seu aparelho, sem sincronização, sem perder o acesso ao app.</li>
 </ul>
       </section>
 
       <section>
-        <h2>7. Retenção e exclusão</h2>
+        <h2>9. Retenção e exclusão</h2>
         <p>Mantemos seus dados enquanto sua conta existir. Ao solicitar a exclusão da conta, há uma carência de 3 dias na qual você pode desfazer; passado o prazo, os dados do servidor (perfil e uso de IA) e os arquivos associados são removidos, e o banco local do dispositivo é apagado na próxima abertura do app.</p>
 <p>Chamados de suporte e sugestões são apagados junto com a sua conta. O telefone de contato é apagado antes disso: assim que o chamado é concluído. Como ele nunca trafega por e-mail, não fica cópia dele na nossa caixa de atendimento. O restante do chamado sai no aviso por e-mail e pode permanecer nessa caixa; se quiser que essas cópias também sejam removidas, peça pelo e-mail de contato.</p>
+<p>A cópia sincronizada existe enquanto a sincronização estiver ligada. Ao desligá-la, a cópia é apagada imediatamente dos nossos servidores. Ao excluir a conta, ela é apagada junto com o restante — depois da carência de 3 dias.</p>
+<p>Prazos por tipo de dado: conta e perfil — enquanto a conta existir; dados de saúde e atividade — no seu aparelho, sob seu controle, e na cópia sincronizada enquanto a sincronização estiver ligada; mensagens do assistente de IA — só no seu aparelho (os provedores de IA as recebem para responder e não as guardam além do necessário para o processamento); contadores de uso de IA e registro operacional por chamada — 30 dias; relatórios de erro — 90 dias no Sentry; eventos de analytics — 12 meses no PostHog, anônimos; dados de assinatura — enquanto houver assinatura ou obrigação fiscal.</p>
       </section>
 
       <section>
-        <h2>8. Crianças</h2>
-        <p>O Avant não é direcionado a menores de 13 anos e não coletamos intencionalmente dados de crianças. Se você acredita que uma criança nos forneceu dados, entre em contato para que possamos removê-los.</p>
+        <h2>10. Idade mínima</h2>
+        <p>O Avant é para maiores de 18 anos: trata dados de saúde e sugere alimentação e treino, o que não é adequado a menores. O cadastro pede a data de nascimento e recusa menores de 18. Se você acredita que um menor criou uma conta, entre em contato para que possamos encerrá-la e apagar os dados.</p>
       </section>
 
       <section>
-        <h2>9. Alterações nesta política</h2>
+        <h2>11. Assistente de IA</h2>
+        <p>Ao usar o chat, a consultoria mensal, a análise de foto ou a leitura de perfil, você está falando com uma inteligência artificial — o app avisa isso na tela. As respostas são geradas automaticamente, podem conter erros e são orientação educativa de bem-estar, não diagnóstico nem prescrição.</p>
+<p>O que vai para os provedores: para a Anthropic, o texto das suas mensagens e o contexto que o assistente lê do seu diário (perfil, metas, restrições de saúde que você registrou, resumo do dia, treinos e refeições recentes) — só o necessário para responder; para o Google, a foto da refeição. Nada disso é usado para treinar modelos, e nós não usamos suas conversas para publicidade nem para treinar modelos próprios.</p>
+<p>O que não vai: o traçado do seu GPS, suas fotos de progresso, seu e-mail, telefone e senha.</p>
+<p>Limites de uso (mensagens, tokens e fotos por dia; uma consultoria por mês no plano gratuito) são contabilizados no servidor para manter o serviço sustentável; os contadores não guardam o conteúdo.</p>
+      </section>
+
+      <section>
+        <h2>12. Alterações nesta política</h2>
         <p>Podemos atualizar esta política. Quando isso acontecer, alteramos a data de vigência abaixo e, quando apropriado, avisamos no app. O uso contínuo após a atualização significa concordância com a versão revisada.</p>
       </section>
 
       <section>
-        <h2>10. Contato</h2>
-        <p>Dúvidas, pedidos relacionados aos seus dados ou ao encarregado de dados: avantapp0@gmail.com.</p>
+        <h2>13. Contato</h2>
+        <p>Dúvidas, pedidos relacionados aos seus dados ou ao encarregado de dados: contato@avantsociety.com.br.</p>
       </section>
   </main>
 </body>
